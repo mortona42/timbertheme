@@ -1,0 +1,13 @@
+{
+    "name": "mortona42/timbertheme",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Andrew Morton",
+            "email": "mortona42@gmail.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
