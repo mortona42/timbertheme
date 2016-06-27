@@ -1,0 +1,33 @@
+{% if featured %}
+    <div class="articles">
+        <a href="{{ featured.guid }}">
+            <div class="articles articles_featured" style="background-image:url({{ featured.thumbnail.src }});">
+                <h2>{{ featured.post_title }}</h2>
+            </div>
+        </a>
+
+        {% if posts|length > 0 %}
+            <div class="articles articles_grid">
+                {% for post in posts %}
+                    <a href="{{ post.guid }}">
+                        <div class="articles articles_grid_single">
+                            <img src="{{ post.thumbnail.src|resize(600, 400) }}">
+
+                            <div class="articles articles_grid_single--overlay">
+                                <h2>{{ post.post_title }}</h2>
+
+                                <hr>
+
+                                <div>
+                                    {{ post.post_excerpt }}
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}
+{#<pre>{{ dump(post) }}</pre>#}

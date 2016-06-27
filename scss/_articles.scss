@@ -1,0 +1,54 @@
+.articles {
+
+  .articles_featured {
+    background-size:cover;
+    position:relative;
+    height:100vh;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .articles_grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: center;
+
+    .articles_grid_single {
+      position: relative;
+      text-align: center;
+      align-self: flex-start;
+
+      img {
+        width: 100%;
+        opacity: 0.6;
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+      }
+      &:hover img{
+        opacity: 1.0;
+      }
+
+      .articles_grid_single--overlay {
+        width: 100%;
+        position: absolute;
+        top: 20px;
+
+        h2 {
+          text-align: center;
+        }
+
+        hr {
+          width: 100px;
+          background: black;
+          height: 1px;
+          border: 0;
+        }
+      }
+    }
+  }
+}

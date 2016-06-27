@@ -1,0 +1,43 @@
+<div class="sily-image-double">
+
+    {% if quote %}
+        <div class="sily-image-double_quote">
+            <blockquote>{{ quote }}</blockquote>
+        </div>
+    {% endif %}
+
+    <div class="sily-image-double_images">
+
+        {% if caption_left %}
+            <div class="sily-image-double_caption sily-image-double_caption--left">
+                <blockquote>{{ caption_left }}</blockquote>
+            </div>
+        {% endif %}
+
+        <div class="sily-image-double_image sily-image-double_image--left">
+            <img src="{{ img_left_src }}"
+                 srcset="{{ img_left_srcset }}"
+                 sizes=""
+                 alt=""
+                 original-image="{{ img_left_src_orig }}"
+                 original-height="{{ img_left_height }}"
+                 original-width="{{ img_left_width }}">
+        </div>
+
+        {% if caption_right %}
+            <div class="sily-image-double_caption sily-image-double_caption--right">
+                <blockquote>{{ caption_right }}</blockquote>
+            </div>
+        {% endif %}
+
+        <div class="sily-image-double_image sily-image-double_image--right">
+            <img src="{{ img_right_src }}"
+                 srcset="{{ img_right_srcset }}"
+                 sizes=""
+                 alt=""
+                 original-image="{{ img_right_src_orig }}"
+                 original-height="{{ img_right_height }}"
+                 original-width="{{ img_right_width }}">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="sily-image-single">
+    {% if quote %}
+        <div class="sily-image-single_quote sily-image-single_quote--{{ quote_align }}">
+            <blockquote>{{ quote }}</blockquote>
+        </div>
+    {% endif %}
+
+    {% if caption %}
+        <div class="sily-image-single_caption">
+            <blockquote>{{ caption }}</blockquote>
+        </div>
+    {% endif %}
+
+    <div class="sily-image-single_image sily-image-single_image--{{ image_align }}">
+        <img src="{{ img_src }}"
+             srcset="{{ img_srcset }}"
+             sizes=""
+             alt=""
+             original-image="{{ img_src_orig }}"
+             original-height="{{ img_height }}"
+             original-width="{{ img_width }}">
+    </div>
+</div>

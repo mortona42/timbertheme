@@ -1,0 +1,8 @@
+{
+  "scss": {
+    "files": [
+      "scss/**/*.scss"
+    ],
+    "dest" : "."
+  }
+}

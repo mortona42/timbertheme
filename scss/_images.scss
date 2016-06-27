@@ -1,0 +1,15 @@
+figure.wp-caption {
+  position: relative;
+  z-index: -1;
+  margin: auto;
+  max-width: 100%;
+
+  figcaption {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+}

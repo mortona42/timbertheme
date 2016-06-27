@@ -1,0 +1,25 @@
+.contributors {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .contributor {
+    height: 50px;
+
+    .contributor_name {
+      display: block;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 782px) {
+  .admin-bar .contributors {
+    top: 32px;
+  }
+}
+@media screen and (max-width: 781px) {
+  .admin-bar .contributors {
+    top: 46px;
+  }
+}

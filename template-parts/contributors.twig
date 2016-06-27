@@ -1,0 +1,14 @@
+{% if contributors|length > 0 %}
+    <div id="contributors" class="contributors">
+    {% for contributor in contributors %}
+        <div class="contributor">
+            <a href="{{ contributor.guid }}">
+                <span class="contributor_name">{{ contributor.contributor }}</span>
+                <span class="contributor_article">{{ contributor.role }}</span>
+                <span>-</span>
+                <span>{{ contributor.location }}</span>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+{% endif %}

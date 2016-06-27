@@ -1,0 +1,13 @@
+.footer {
+  color: white;
+  background-color: #222;
+  width: 100%;
+
+  .footer_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+}
