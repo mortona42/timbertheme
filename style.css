@@ -337,7 +337,10 @@ figure.wp-caption {
 .articles .articles_featured {
   background-size: cover;
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .articles .articles_featured h2 {
     text-align: center; }
 
